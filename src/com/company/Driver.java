@@ -2,6 +2,21 @@ package com.company;
 
 public class Driver {
     private String name;
+    private int id;
+
+    public Driver(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    public Driver(){}
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Driver(String name) {
         this.name = name;
@@ -16,6 +31,6 @@ public class Driver {
     }
     @Override
     public String toString() {
-        return " " + name;
+        return " driver-" + id + " " + name ;
     }
 }

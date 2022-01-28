@@ -12,6 +12,7 @@ public class Depo2 {
         this.driver = driver;
         this.state = state;
     }
+    public Depo2(){}
 
     public int getId() {
         return id;
@@ -51,5 +52,13 @@ public class Depo2 {
 
                 " -—+———————————+—————————+—————————\n" +
                         id + "  |" + bus + "      |          | " + state;
+    }
+    public static Depo2 makeDepo2 ( int id, Bus bus, Driver driver, State state  ){
+        Depo2 depo2 = new Depo2();
+        depo2.id = id;
+        depo2.bus = bus;
+        depo2.driver = driver;
+        depo2.state = state;
+        return depo2;
     }
 }
